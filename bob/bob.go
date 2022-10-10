@@ -1,26 +1,3 @@
-# Bob the Bot
-
-## Steps
-
-### 01) Open this project with Gitpod
-
-> this is a wip 🚧
-
-When the project is opened with Gitpod, all dependencies are installed (see `.gitpod.yml`)
-
-### 02) Generate the project
-
-```bash
-cabu generate service-post bob
-cd bob
-go mod tidy
-```
-> when **cabu** is run for the first time, it will pull the Capsule Builder Docker image
-
-#### Source code generated
-
-> bob.go
-```golang
 package main
 
 import (
@@ -56,24 +33,3 @@ func Handle(request hf.Request) (response hf.Response, errResp error) {
 /*
 curl -v -X POST   http://localhost:8080   -H 'content-type: application/json'   -d '{"name": "Bob"}'
 */
-```
-
-#### First build
-
-```bash
-cd bob
-cabu build . bob.go bob.wasm
-```
-
-#### First Run
-
-```bash
-cd bob
-capsule -wasm=./bob.wasm -mode=http -httpPort=8080
-```
-
-Call the service: 
-
-```bash
-curl -v -X POST http://localhost:8080 -H 'content-type: application/json' -d '{"name": "Bob"}'
-```
