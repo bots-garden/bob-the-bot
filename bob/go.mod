@@ -5,7 +5,6 @@ go 1.18
 require (
 	github.com/bots-garden/capsule/capsulemodule v0.2.8
 	github.com/tidwall/gjson v1.14.3
-	github.com/tidwall/sjson v1.2.5
 )
 
 require (

@@ -77,3 +77,9 @@ Call the service:
 ```bash
 curl -v -X POST http://localhost:8080 -H 'content-type: application/json' -d '{"name": "Bob"}'
 ```
+
+### 03) Prepare WebHook
+
+- Go to Settings > Webhooks (Content type: application/json) / Issues + Issue comments
+
+https://8080-botsgarden-bobthebot-3uk65iyrzav.ws-eu70.gitpod.io
