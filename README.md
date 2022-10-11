@@ -83,3 +83,17 @@ curl -v -X POST http://localhost:8080 -H 'content-type: application/json' -d '{"
 - Go to Settings > Webhooks (Content type: application/json) / Issues + Issue comments
 
 https://8080-botsgarden-bobthebot-3uk65iyrzav.ws-eu70.gitpod.io
+
+
+```
+/*
+https://docs.github.com/en/rest/issues/comments#create-an-issue-comment
+
+curl \
+  -X POST \
+  -H "Accept: application/vnd.github+json" \
+  -H "Authorization: Bearer <YOUR-TOKEN>" \
+  https://api.github.com/repos/OWNER/REPO/issues/ISSUE_NUMBER/comments \
+  -d '{"body":"Me too"}'
+*/
+```
