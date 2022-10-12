@@ -1,4 +1,4 @@
-module bob
+module bob-gitlab
 
 go 1.18
 
